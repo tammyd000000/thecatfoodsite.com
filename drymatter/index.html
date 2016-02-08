@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dry Matter Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="calc.css">
+  <script type="text/javascript" src="./calc.js" ></script>
+
+</head>
+<body>
+<div class="container drycalc">
+  <form id='calc'>
+    <div class="row">
+        <div class="three columns" onchange=>% Moisture:</div>
+        <div class="nine columns">
+          <input name='moisture' style="text-align:right;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="three columns">% Ingredient:</div>
+        <div class="nine columns">
+          <input name='ingredient' style="text-align:right;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="three columns">Dry Matter %:</div>
+        <div class="nine columns">
+          <input readonly name='drymatter' style="text-align:right;">
+        </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
