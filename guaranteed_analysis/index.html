@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Guranteed Analysis Dry Matter Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="./calc.js" ></script>
+
+</head>
+<body>
+<div class="container container--main">
+  <form id='calc'>
+    <div class="row">
+        <div class="four columns" onchange=>% Protein (min):</div>
+        <div class="eight columns">
+          <input name='protein' style="text-align:right;" onClick="this.select();">
+        </div>
+    </div>
+    <div class="row">
+        <div class="four columns">% Fat (min):</div>
+        <div class="eight columns">
+          <input name='fat' style="text-align:right;" onClick="this.select();">
+        </div>
+    </div>
+    <div class="row">
+        <div class="four columns" onchange=>% Fiber: (max)</div>
+        <div class="eight columns">
+          <input name='fiber' style="text-align:right;" onClick="this.select();">
+        </div>
+    </div>
+    <div class="row">
+        <div class="four columns">% Moisture (max):</div>
+        <div class="eight columns">
+          <input name='moisture' style="text-align:right;" onClick="this.select();">
+        </div>
+    </div>
+    <div class="row">
+        <div class="four columns">% Other (max):</div>
+        <div class="eight columns">
+          <input name='other' style="text-align:right;" onClick="this.select();">
+        </div>
+    </div>
+    <div class="row">
+        <div class="four columns">Price per ounce:</div>
+        <div class="eight columns">
+          <input name='price' style="text-align:right;" onClick="this.select();">
+        </div>
+    </div>
+    <div class="row">
+      <hr />
+    </div>
+      <div class="row">
+        <div class="four columns">Dry Carbs %:</div>
+        <div class="eight columns">
+          <input readonly name='dry_carbs' style="text-align:right;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four columns">Dry Protein %:</div>
+        <div class="eight columns">
+          <input readonly name='dry_protein' style="text-align:right;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Dry Fat %:</div>
+        <div class="eight columns">
+          <input readonly name='dry_fat' style="text-align:right;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Dry Fiber %:</div>
+        <div class="eight columns">
+          <input readonly name='dry_fiber' style="text-align:right;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Dry Other %:</div>
+        <div class="eight columns">
+          <input readonly name='dry_other' style="text-align:right;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Calories 100g:</div>
+        <div class="eight columns">
+          <input readonly name='calories_100' style="text-align:right;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Calories per oz:</div>
+        <div class="eight columns">
+          <input readonly name='calories_ounce' style="text-align:right;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Price Per 275 cal:</div>
+        <div class="eight columns">
+          <input readonly name='price_serving' style="text-align:right;">
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>
+</body>
+</html>
